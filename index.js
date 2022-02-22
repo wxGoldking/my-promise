@@ -2,7 +2,7 @@
  * 1. Promise存在三个状态（state）pending、fulfilled、rejected,
  *    pending（等待态）为初始态，并可以转化为fulfilled（成功态）和rejected（失败态),
  *    resolve接收并保存成功时的值（value）, 并修改状态为fulfilled,
- *    resolve接收并保存失败时的值（value）, 并修改状态为rejected,
+ *    reject接收并保存失败时的值（value）, 并修改状态为rejected,
  *    new Promise((resolve, reject)=>{resolve(value)}) resolve为成功，接收参数value，状态改变为fulfilled，不可再次改变。
  *    new Promise((resolve, reject)=>{reject(reason)}) reject为失败，接收参数reason，状态改变为rejected，不可再次改变。
  * 2. 拥有.then 方法
